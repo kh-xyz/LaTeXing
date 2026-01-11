@@ -1,0 +1,109 @@
+\documentclass[reqno,a4paper]{article}
+\usepackage[fontsize=12pt]{scrextend}
+\usepackage{blindtext}
+\usepackage{fullpage,color}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amsfonts,amssymb,amsthm,amscd}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage{enumerate}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{yfonts}
+\usepackage{amsthm}
+\usepackage{physics}
+\usepackage{bigints}
+\usepackage[top=2.5cm, left=3cm, right=3cm, bottom=4.0cm]{geometry}
+\usepackage{mathtools}
+\usepackage{pst-node}
+\usepackage{auto-pst-pdf}
+\usepackage{tikz-cd}
+\usepackage{pgfplots} 
+\usepackage{latexsym}
+% \usepackage{newtxmath}
+% \usepackage{newtxtext} 
+% eri fontti
+\usepackage[all]{xy}
+% this is needed for tikz labels to render
+\usetikzlibrary{babel}
+% equation numbering per section
+\usepackage{chngcntr}
+\counterwithin*{equation}{section}
+\counterwithin*{equation}{subsection}
+% dual bracket for functional analysis works also for innerproducts with \mid but not for bra-ket as im not a physicist.
+\DeclarePairedDelimiter\dual{\langle}{\rangle}
+% open and closed inclusions in Väisälä Topology books
+\newcommand{\closedin}{\mathrel{\subset\!\!\!\!\!\vcenter
+{\hbox{$\scriptstyle\mathrm{c}$}}}}
+\newcommand{\opennin}{\mathrel{\subset\!\!\!\!\!\vcenter
+{\hbox{$\scriptstyle\mathrm{o}$}}}}
+% Big tau for topologies
+\newcommand{\bigtau}{\makebox{\LARGE\ensuremath{\tau}}}
+% Big emptyset
+\newcommand{\bigempty}{\makebox{\large\ensuremath{\varnothing}}}
+% sets of numbers
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\cat}{\mathcal{C}}
+\newcommand{\B}{\mathcal{B}}
+\newcommand{\A}{\mathbb{A}}
+% space of distributions
+\newcommand{\D}{\mathcal{D}}
+% some non cursive functions
+\newcommand{\id}{\text{id}}
+\newcommand{\pr}{\text{pr}}
+\newcommand{\dif}{\text{d}}
+% limit for sequence n going to infinity
+\newcommand{\ninf}{\lim\limits_{n\rightarrow\infty}}
+% long equivalence arrow
+\newcommand{\llr}{\Longleftrightarrow}
+% theorem enviorement for cursive statements mid proof if u want to look cool rather than cite a book.
+
+
+\theoremstyle{remark}
+\usepackage{mdframed}
+\newmdtheoremenv{exercise}{Exercise} % exercise enviorement
+%%\newtheorem{exercise}{Exercise} % exercise enviorement
+%%\newtheorem{solution}{Solution} % exercise enviorement
+\theoremstyle{theorem}
+\newtheorem{thm}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem{exer}{Exercise}[section]
+\theoremstyle{remark}
+\newtheorem{solution}{Solution}[section] % exercise enviorement
+\setcounter{section}{1}
+% restriction maps
+\newcommand\restr[2]{{% we make the whole thing an ordinary symbol
+  \left.\kern-\nulldelimiterspace % automatically resize the bar with \right
+  #1 % the function
+  \littletaller % pretend it's a little taller at normal size
+  \right|_{#2} % this is the delimiter
+  }}
+\newcommand{\littletaller}{\mathchoice{\vphantom{\big|}}{}{}{}}
+\newcommand{\normal}{\triangleleft}
+
+
+\title{LaTeXing}
+\author{
+    Heinonen, Kalle}
+\date{}
+\begin{document}
+\maketitle
+
+
+\end{document}
+
+
+
+
+
+
+
